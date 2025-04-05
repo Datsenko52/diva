@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: serif;
+  background-color: #000;
+  color: #f97316;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  font-size: 18px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 40px 0;
+}
+
+.hero-image {
+  max-width: 600px;
+  display: block;
+}
+
+.about {
+  text-align: center;
+  padding: 50px 30px;
+  border-top: 1px solid #f97316;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.8;
+  color: white;
+}
+
+.about-img {
+  margin-top: 30px;
+  width: 300px;
+}
+
+.short-menu {
+  text-align: center;
+  padding: 50px 30px;
+  border-top: 1px solid #f97316;
+}
+
+.short-menu h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.item {
+  text-align: center;
+  color: white;
+}
+
+.item img {
+  width: 180px;
+  height: auto;
+  border: 1px solid #f97316;
+}
+
+.see-more {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 30px;
+  background-color: #f97316;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+}
