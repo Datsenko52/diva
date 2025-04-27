@@ -108,25 +108,7 @@ nav ul li a {
   max-width: 300px;
   border-radius: 10px;
 }
-/* Додаємо плавні анімації */
-body, .logo, nav ul li a, .hero img, .kanji span, .brand, .about h2, .about-text, .about-img img {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease;
-}
 
-/* Коли сторінка завантажилась — плавно з'являються */
-body.loaded body, 
-body.loaded .logo, 
-body.loaded nav ul li a, 
-body.loaded .hero img, 
-body.loaded .kanji span, 
-body.loaded .brand, 
-body.loaded .about h2, 
-body.loaded .about-text, 
-body.loaded .about-img img {
-  opacity: 1;
-  transform: translateY(0);
 }
 nav ul li a {
   position: relative;
@@ -176,3 +158,22 @@ nav ul li a:hover::after {
     max-width: 90%;
   }
 }
+/* Додаємо плавні анімації */
+body, .logo, nav ul li a, .hero img, .kanji span, .brand, .about h2, .about-text, .about-img img {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+/* Коли сторінка завантажилась — плавно з'являються */
+body.loaded body, 
+body.loaded .logo, 
+body.loaded nav ul li a, 
+body.loaded .hero img, 
+body.loaded .kanji span, 
+body.loaded .brand, 
+body.loaded .about h2, 
+body.loaded .about-text, 
+body.loaded .about-img img {
+  opacity: 1;
+  transform: translateY(0);
