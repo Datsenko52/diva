@@ -253,6 +253,8 @@ footer {
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #222;
 }
 
 .review-cards {
@@ -263,50 +265,55 @@ footer {
 }
 
 .review-card {
-margin: 0 auto;
-  background-color:   width: 100%;
+  background-color: rgba(20, 20, 20, 0.85); /* твій темний фон */
+  border: 1px solid #E67E22; /* помаранчевий акцент */
+  border-radius: 12px;
   max-width: 400px;
-  border-radius: 12px;
-  display: block;
-rgba(20, 20, 20, 0.85);
-  border: 1px solid #E67E22;
-  border-radius: 12px;
-  overflow: hidden;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  transition: all 0.4s ease;
-  opacity: 0.8;
-  
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0.85;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+  cursor: pointer;
 }
-.review card:hover{
-width: 100%;
-  max-width: 300px;
-  border-radius: 12px;
-  display: block;
-  margin: 0 auto;
+
+.review-card:hover {
   transform: translateY(-8px) scale(1.05);
   box-shadow: 0 0 20px rgba(230, 126, 34, 0.8);
   opacity: 1;
-  transition: 1s;
 }
-
 
 .avatar {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #E67E22; /* обводка аватара */
+  align-self: center; /* центрований аватар */
+}
+
+.review-card h3 {
+  margin: 0 0 10px 0;
+  color: #E67E22;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .stars {
   color: #f5a623;
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .review-card p {
   font-style: italic;
-  color: #333;
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: center;
 }
