@@ -6,7 +6,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(17, 17, 17, 0.9));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(17, 17, 17, 0.85));
+
 
   color: #E67E22;
   line-height: 1.6;
@@ -337,5 +338,15 @@ footer,
 section {
   position: relative;
   z-index: 1;
+}
+main,
+section,
+footer {
+  background-color: rgba(0, 0, 0, 0.7); /* затемняющий фон */
+  backdrop-filter: blur(2px); /* мягкое размытие сзади */
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
 }
 
