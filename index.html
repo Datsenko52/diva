@@ -1,16 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DIVA – Japanese Cuisine</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Yu+Gothic&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Yu+Gothic&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+  </style>
 </head>
 <body>
+  <!-- 🎆 Контейнер частиц -->
+  <div id="particles-js"></div>
 
   <header>
     <div class="logo">DIVA</div>
@@ -18,60 +27,62 @@
       <ul>
         <li><a href="https://datsenko52.github.io/divamenu/">MENU</a></li>
         <li><a href="#about" class="active">ABOUT US</a></li>
-        <li><a href=" " class="active">SALES</a></li>
+        <li><a href="#" class="active">SALES</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
-     <div class="kanji">味状態</div>
-      <div class="brand">DIVA</div>
-      <div class="chopsticks left"></div>
-      <div class="chopsticks right"></div>
-    </section>
+    <!-- ... тут твой контент, включая секции ... -->
 
-    <section class="about" id="about">
-      <h2>ABOUT US</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>Welcome to our world of authentic Japanese cuisine, where tradition meets modern elegance. We take pride in crafting exquisite sushi and delicacies that embody the true essence of Japan.</p>
-          <p>Our restaurant is more than just a place to dine—it’s an experience of refinement and taste. Every ingredient is carefully selected, every roll is made with precision, and every bite tells a story of craftsmanship and passion.</p>
-          <p>We cater to those who appreciate not only the finest flavors but also the art behind them. Whether you seek a sophisticated dining experience or a moment of indulgence, we invite you to immerse yourself in the harmony of Japanese culinary excellence.</p>
-          <p>Indulge in the finest. Taste the prestige. Welcome to perfection—DIVA.</p>
-        </div>
-        <div class="about-img">
-          <img src="https://cdn.27.ua/sc--media--prod/default/e8/45/2d/e8452da0-b699-4d17-899d-a3e839301007.jpg" alt="Sushi with chopsticks">
-        </div>
+    <section class="reviews">
+      <div class="review-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmWyBinKbfInTiBfKPyxPbfNc6PKwObwbmBA&s" alt="Фото гостя" class="avatar" />
+        <h3>Гоя Лінг</h3>
+        <div class="stars">★★★★☆</div>
+        <p>“Добрий сервіс, приємна музика. Рекомендую!”</p>
       </div>
     </section>
-    <section class="reviews">
-  <h2>GUEST REVIEWS </h2>
-  <div class="review-cards">
-    <div class="review-card">
-      <img src="https://i.pinimg.com/736x/c7/13/65/c71365a13a39df80541d8d60978705a9.jpg" alt="Фото гостя" class="avatar" />
-      <h3>Кия Джені</h3>
-      <div class="stars">★★★★★</div>
-      <p>“Смачні суші і неймовірна атмосфера! Обов’язково повернусь.”</p>
-    </div>
-    <div class="review-card">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmWyBinKbfInTiBfKPyxPbfNc6PKwObwbmBA&s" alt="Фото гостя" class="avatar" />
-      <h3>Гоя Лінг</h3>
-      <div class="stars">★★★★☆</div>
-      <p>“Добрий сервіс, приємна музика. Рекомендую!”</p>
-     
-      
-    </div>
-    
-  </div>
-</section>
-
   </main>
 
   <footer>
     <p>&copy; 2025 DIVA Restaurant. All rights reserved.</p>
   </footer>
 
+  <!-- 📦 Подключение библиотеки particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- ⚙️ Настройка частиц -->
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 70, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#ff7300" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.5 },
+        "size": { "value": 3 },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffaa00",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": { "enable": true, "speed": 2 }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" },
+          "onclick": { "enable": true, "mode": "push" }
+        },
+        "modes": {
+          "grab": { "distance": 200, "line_linked": { "opacity": 0.6 } },
+          "push": { "particles_nb": 4 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
 </body>
 </html>
-
