@@ -6,7 +6,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(to bottom, #000, #111);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(17, 17, 17, 0.9));
+
   color: #E67E22;
   line-height: 1.6;
 }
@@ -317,3 +318,24 @@ footer {
   line-height: 1.4;
   text-align: center;
 }
+/* 🎆 Частицы на фоне */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+/* 🧱 Контент поверх частиц */
+body,
+header,
+main,
+footer,
+section {
+  position: relative;
+  z-index: 1;
+}
+
