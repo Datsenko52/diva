@@ -65,7 +65,7 @@ nav a:hover,
 nav a.active {
   color: #E67E22;
   border-radius: 12px;
-  margin: 0 auto;
+  padding: 0 auto;
   box-shadow: 0 0 20px rgba(230, 126, 34, 0.8);
   opacity: 1;
   transition: 1s;
