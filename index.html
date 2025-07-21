@@ -20,8 +20,7 @@
 <body>
 
 
-  <!-- 🎆 Контейнер частиц -->
-  <div id="particles-js"></div>
+  
 
   <header>
     <div class="logo">DIVA</div>
@@ -173,40 +172,6 @@
     <p>&copy; 2025 DIVA Restaurant. All rights reserved.</p>
   </footer>
 
-  <!-- 📦 Подключение библиотеки particles.js -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-  <!-- ⚙️ Настройка частиц -->
-  <script>
-    particlesJS("particles-js", {
-      "particles": {
-        "number": { "value": 70, "density": { "enable": true, "value_area": 800 } },
-        "color": { "value": "#ff7300" },
-        "shape": { "type": "circle" },
-        "opacity": { "value": 0.5 },
-        "size": { "value": 3 },
-        "line_linked": {
-          "enable": true,
-          "distance": 150,
-          "color": "#ffaa00",
-          "opacity": 0.4,
-          "width": 1
-        },
-        "move": { "enable": true, "speed": 2 }
-      },
-      "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-          "onhover": { "enable": true, "mode": "grab" },
-          "onclick": { "enable": true, "mode": "push" }
-        },
-        "modes": {
-          "grab": { "distance": 200, "line_linked": { "opacity": 0.6 } },
-          "push": { "particles_nb": 4 }
-        }
-      },
-      "retina_detect": true
-    });
-  </script>
 </body>
 </html>
