@@ -412,6 +412,33 @@ footer {
   text-decoration: line-through;
   color: #999;
   margin-right: 10px;
+ .add-to-cart {
+  background-color: #E67E22;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.add-to-cart:hover {
+  background-color: #ffa43d;
+}
+
+.cart-message {
+  font-size: 0.9em;
+  color: #77ff77;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
   font-size: 0.95em;
 }
 
