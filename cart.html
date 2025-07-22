@@ -4,79 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your Cart – DIVA</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Yu+Gothic&display=swap" rel="stylesheet" />
   <style>
-    .cart {
-      max-width: 800px;
-      margin: 100px auto;
-      background: rgba(20, 20, 20, 0.9);
-      padding: 30px;
-      border-radius: 12px;
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url('https://github.com/Datsenko52/diva/blob/main/ChatGPT%20Image%2021%20%D0%BB%D0%B8%D0%BF.%202025%20%D1%80.,%2018_39_36.png?raw=true') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
       color: #E67E22;
     }
 
-    .cart h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
+    .container {
+      max-width: 800px;
+      margin: 100px auto;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(230, 126, 34, 0.6);
+    }
+
+    h1 {
       text-align: center;
+      margin-bottom: 30px;
+      font-family: 'Yu Gothic', sans-serif;
     }
 
     .cart-item {
+      display: flex;
+      justify-content: space-between;
       border-bottom: 1px solid #E67E22;
       padding: 15px 0;
+      font-size: 1.2em;
     }
 
-    .cart-item:last-child {
-      border: none;
+    .empty {
+      text-align: center;
+      font-style: italic;
+      color: #aaa;
     }
 
-    .total {
-      text-align: right;
-      margin-top: 20px;
+    .back {
+      display: block;
+      margin: 30px auto 0;
+      width: fit-content;
+      padding: 10px 25px;
+      background-color: #E67E22;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
       font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .back:hover {
+      background-color: #ff9d4b;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">DIVA</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="https://datsenko52.github.io/divamenu/">MENU</a></li>
-        <li><a href="index.html#about">ABOUT US</a></li>
-        <li><a href="index.html#sales">SALES</a></li>
-        <li><a href="index.html#reviews">REVIEWS</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
+    <h1>Your Cart</h1>
+    <div id="cart-items"></div>
+    <a href="index.html" class="back">Back to Menu</a>
+  </div>
 
-  <main>
-    <section class="cart">
-      <h2>Your Cart</h2>
+  <script>
+    // Отримати дані з URL
+    const params = new URLSearchParams(window.location.search);
+    const item = params.get("item");
+    const price = params.get("price");
 
-      <!-- Приклад товарів у корзині -->
-      <div class="cart-item">
-        <h3>Dragon Roll</h3>
-        <p>₴360</p>
-      </div>
+    const cart = document.getElementById("cart-items");
 
-      <div class="cart-item">
-        <h3>Spicy Tuna</h3>
-        <p>₴159</p>
-      </div>
-
-      <div class="cart-item">
-        <h3>Gyoza</h3>
-        <p>₴192</p>
-      </div>
-
-      <div class="total">Total: ₴711</div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 DIVA Restaurant. All rights reserved.</p>
-  </footer>
+    if (item && price) {
+      cart.innerHTML = `
+        <div class="cart-item">
+          <span>${item}</span>
+          <span>₴${price}</span>
+        </div>
+      `;
+    } else {
+      cart.innerHTML = '<p class="empty">Your cart is empty.</p>';
+    }
+  </script>
 </body>
 </html>
