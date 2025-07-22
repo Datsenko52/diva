@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Cart – DIVA</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .cart {
+      max-width: 800px;
+      margin: 100px auto;
+      background: rgba(20, 20, 20, 0.9);
+      padding: 30px;
+      border-radius: 12px;
+      color: #E67E22;
+    }
+
+    .cart h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .cart-item {
+      border-bottom: 1px solid #E67E22;
+      padding: 15px 0;
+    }
+
+    .cart-item:last-child {
+      border: none;
+    }
+
+    .total {
+      text-align: right;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">DIVA</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="https://datsenko52.github.io/divamenu/">MENU</a></li>
+        <li><a href="index.html#about">ABOUT US</a></li>
+        <li><a href="index.html#sales">SALES</a></li>
+        <li><a href="index.html#reviews">REVIEWS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart">
+      <h2>Your Cart</h2>
+
+      <!-- Приклад товарів у корзині -->
+      <div class="cart-item">
+        <h3>Dragon Roll</h3>
+        <p>₴360</p>
+      </div>
+
+      <div class="cart-item">
+        <h3>Spicy Tuna</h3>
+        <p>₴159</p>
+      </div>
+
+      <div class="cart-item">
+        <h3>Gyoza</h3>
+        <p>₴192</p>
+      </div>
+
+      <div class="total">Total: ₴711</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DIVA Restaurant. All rights reserved.</p>
+  </footer>
+</body>
+</html>
