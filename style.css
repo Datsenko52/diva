@@ -43,7 +43,7 @@ nav a {
   color: #fff;
   transition: color 0.3s;
   border-radius: 12px;
-
+  text-decoration: none;
   margin: 0 auto;
   background-color: rgba(20, 20, 20, 0.85);
 
