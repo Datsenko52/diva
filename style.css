@@ -443,13 +443,13 @@ footer {
   padding: 10px 20px;
   margin-top: 10px;
   background-color: #E67E22;
-  color: #000;
+  color: #000 !important;
   font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-decoration: none;
+  text-decoration: none !important;  /* <<< ось головне */
 }
 
 .order-btn:hover {
@@ -458,6 +458,7 @@ footer {
   box-shadow: 0 0 12px rgba(230, 126, 34, 0.8);
   transform: scale(1.05);
 }
+
 
   font-size: 0.95em;
 }
